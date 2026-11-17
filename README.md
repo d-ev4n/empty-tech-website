@@ -74,20 +74,22 @@ GETTING STARTED
 PROJECT STRUCTURE
 ================================================================================
 
+PROJECT STRUCTURE
+```
 empty-tech/
-├── index.html
-├── phones.html
-├── laptops.html
-├── tablets.html
-├── headphones.html
-├── earbuds.html
-├── keyboard-mouse.html
-├── more-tech.html
-├── checkout.html
-├── style.css
-├── script.js
-└── README.txt
-
+|-- index.html
+|-- phones.html
+|-- laptops.html
+|-- tablets.html
+|-- headphones.html
+|-- earbuds.html
+|-- keyboard-mouse.html
+|-- more-tech.html
+|-- checkout.html
+|-- style.css
+|-- script.js
+`-- README.txt
+```
 
 HOW IT WORKS
 ================================================================================
