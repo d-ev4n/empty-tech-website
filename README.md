@@ -1,7 +1,6 @@
-================================================================================
-EMPTY — TECH BRAND WEBSITE
-================================================================================
 
+EMPTY — TECH BRAND WEBSITE
+==========================================
 A modern, responsive frontend website for a fictional tech brand called "Empty",
 showcasing a range of consumer electronics including phones, laptops, tablets,
 headphones, earbuds, keyboards, mice, and more.
@@ -9,7 +8,7 @@ headphones, earbuds, keyboards, mice, and more.
 Built with plain HTML, CSS, and JavaScript — no frameworks, no build tools,
 no dependencies. Just open a file and it works.
 
-================================================================================
+
 FEATURES
 ================================================================================
 
@@ -31,7 +30,7 @@ FEATURES
 - Accessible — ARIA labels, keyboard-friendly controls, semantic markup
 - No frameworks, no build step — pure HTML, CSS, and JavaScript
 
-================================================================================
+
 PAGES
 ================================================================================
 
@@ -47,7 +46,7 @@ checkout.html       — Checkout form with payment options
 style.css           — All styling (shared across pages)
 script.js           — Cart, currency, theme, and UI logic
 
-================================================================================
+
 GETTING STARTED
 ================================================================================
 
@@ -71,7 +70,7 @@ GETTING STARTED
 
    Then visit http://localhost:8000
 
-================================================================================
+
 PROJECT STRUCTURE
 ================================================================================
 
@@ -89,7 +88,7 @@ empty-tech/
 ├── script.js
 └── README.txt
 
-================================================================================
+
 HOW IT WORKS
 ================================================================================
 
@@ -127,7 +126,7 @@ Checkout
 - Submitting shows a "Thank you" confirmation — nothing is sent anywhere
   (demo only).
 
-================================================================================
+
 TECH STACK
 ================================================================================
 
@@ -137,7 +136,7 @@ TECH STACK
 - SVG — inline device illustrations and icons
 - Exchange Rate API — live currency conversion
 
-================================================================================
+
 BROWSER SUPPORT
 ================================================================================
 
@@ -148,7 +147,7 @@ Works in all modern browsers:
 - Safari (latest)
 - Mobile browsers (iOS Safari, Chrome for Android)
 
-================================================================================
+
 NOTES
 ================================================================================
 
@@ -158,13 +157,13 @@ NOTES
 - The currency API is called client-side; in a real app you'd proxy this
   through a backend to protect any API keys.
 
-================================================================================
+
 LICENSE
 ================================================================================
 
 This project is open source and available under the MIT License.
 
-================================================================================
+
 CREDITS
 ================================================================================
 
@@ -172,7 +171,7 @@ CREDITS
 - Fonts, icons, and illustrations are custom/inline — no external assets
   required
 
-================================================================================
+
 Built as a frontend showcase for a fictional tech brand.
 Feel free to fork, remix, and make it your own.
 ================================================================================
