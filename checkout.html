@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" style="--a1:#5b8cff;--a2:#b36bff;--on:#10121a">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07080c">
+<title>Checkout</title>
+<script>try{var d=document.documentElement,n=navigator,c=n.connection;d.dataset.theme=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");if((n.deviceMemory&&n.deviceMemory<=4)||(n.hardwareConcurrency&&n.hardwareConcurrency<=4)||(c&&c.saveData)||matchMedia("(prefers-reduced-data: reduce)").matches)d.classList.add("lite")}catch(e){document.documentElement.dataset.theme="dark"}</script>
+<link rel="stylesheet" href="style.css">
+<noscript><style>.rv{opacity:1;translate:none}</style></noscript>
+</head>
+<body><nav class="glass" aria-label="Main"><a class="brand" href="index.html" aria-label="Home"><i class="e"></i><span class="bn"></span></a><div class="links"><a href="phones.html">Phones</a><a href="laptops.html">Laptops</a><a href="tablets.html">Tablets</a><a href="headphones.html">Headphones</a><a href="earbuds.html">Earbuds</a><a href="keyboard-mouse.html">Keyboards and mice</a><a href="more-tech.html">More tech</a></div>
+<div class="act"><div class="cd"><button id="curb" class="curb" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Choose currency"><span id="curc"></span><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div id="curp" class="curp" hidden><input id="curq" type="search" placeholder="Search currency" aria-label="Search currency" autocomplete="off"><ul id="curl" role="listbox" aria-label="Currencies"></ul></div></div><button id="cb" class="cb" aria-label="Open cart"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cn" hidden>0</span></button><button id="tg" aria-label="Switch between dark and light mode"><svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg><svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg></button></div></nav>
+<main class="wrap co">
+<h1 class="rv">Checkout</h1>
+<div class="cogrid" id="cogrid">
+<form id="cof" class="card cof">
+ <h2>Contact</h2>
+ <div class="row2"><label>Full name<input required autocomplete="name"></label><label>Email<input type="email" required autocomplete="email"></label></div>
+ <label>Phone<input type="tel" required autocomplete="tel"></label>
+ <h2>Delivery</h2>
+ <label>Address<input required autocomplete="street-address"></label>
+ <div class="row2"><label>City<input required autocomplete="address-level2"></label><label>Postal code<input required autocomplete="postal-code"></label></div>
+ <h2>Payment</h2>
+ <div class="pays" role="radiogroup" aria-label="Payment method">
+  <label class="pay"><input type="radio" name="pm" value="card" checked><span>Card</span></label>
+  <label class="pay"><input type="radio" name="pm" value="upi"><span>UPI</span></label>
+  <label class="pay"><input type="radio" name="pm" value="bank"><span>Net banking</span></label>
+  <label class="pay"><input type="radio" name="pm" value="wallet"><span>Wallet</span></label>
+  <label class="pay"><input type="radio" name="pm" value="cod"><span>Pay on delivery</span></label>
+ </div>
+ <div class="pf" data-m="card">
+  <label>Card number<input id="cn" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 9012 3456" pattern="[0-9 ]{15,23}" required></label>
+  <div class="row2"><label>Expiry<input id="ce" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" required></label><label>CVC<input inputmode="numeric" autocomplete="cc-csc" placeholder="123" pattern="[0-9]{3,4}" required></label></div>
+ </div>
+ <div class="pf" data-m="upi" hidden><label>UPI ID<input placeholder="name@bank" pattern="[\w.\-]{2,}@[\w]{2,}"></label></div>
+ <div class="pf" data-m="bank" hidden><p class="mut">You will be sent to your bank to log in and approve the payment.</p></div>
+ <div class="pf" data-m="wallet" hidden><p class="mut">You will be sent to your wallet app to approve the payment.</p></div>
+ <div class="pf" data-m="cod" hidden><p class="mut">Pay in cash or by card when your order arrives.</p></div>
+ <p class="mut small">Demo checkout: no real payment is taken and nothing is sent anywhere.</p>
+ <button class="btn p" id="po" type="submit">Place order</button>
+</form>
+<aside class="card sum" id="sum" aria-label="Order summary"></aside>
+</div>
+<div id="done" class="card done" hidden><h2>Thank you!</h2><p class="mut" id="dm"></p><a class="btn p" href="index.html">Keep browsing</a></div>
+</main><footer><div class="wrap foot"><span class="fl"><i class="e"></i><span class="bn"></span> All rights reserved. <a href="https://www.exchangerate-api.com" rel="noopener"><u>Rates by Exchange Rate API</u></a></span><div class="fn"><a href="phones.html">Phones</a><a href="laptops.html">Laptops</a><a href="tablets.html">Tablets</a><a href="headphones.html">Headphones</a><a href="earbuds.html">Earbuds</a><a href="keyboard-mouse.html">Keyboards and mice</a><a href="more-tech.html">More tech</a></div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
